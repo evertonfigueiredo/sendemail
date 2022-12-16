@@ -35,7 +35,7 @@ Route::resource('produtos', 'App\Http\Controllers\ProdutoController')->middlewar
 Route::get('/produtosvi/{id}', ['App\Http\Controllers\ApiProdutosController', 'store']);
 
 Route::get('/sendemail', function(){
-    Mail::to("j.everton.figueiredo@gmail.com")->send(new TestMail());
+    Mail::to("AQUI_VAI_O_EMAIL_TESTE")->send(new TestMail());
 });
 
 require __DIR__.'/auth.php';
